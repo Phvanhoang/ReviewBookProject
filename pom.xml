@@ -20,8 +20,8 @@
         <module>dao</module>
         <module>common</module>
         <module>configure</module>
-        <module>business-service</module>
         <module>webservice</module>
+        <module>business-service</module>
     </modules>
 
 </project>
