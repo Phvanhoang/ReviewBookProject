@@ -9,6 +9,9 @@ public class RoleEntity implements Serializable {
     private long id;
     private String roleName;
 
+    public RoleEntity() {
+    }
+
     @Id
     @Column(name = "role_id")
     @GeneratedValue(strategy = GenerationType.AUTO)

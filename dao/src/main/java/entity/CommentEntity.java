@@ -17,6 +17,9 @@ public class CommentEntity implements Serializable {
     private String content;
     private Set<CommentEntity> replies = new HashSet<>();
 
+    public CommentEntity() {
+    }
+
     @Id
     @Column(name = "comment_id")
     @GeneratedValue(generator = "uuid")

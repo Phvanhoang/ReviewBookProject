@@ -25,6 +25,9 @@ public class UserEntity implements Serializable {
     private String phoneNumber;
     private String address;
 
+    public UserEntity() {
+    }
+
     @Id
     @Column(name = "user_id", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
