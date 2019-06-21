@@ -32,6 +32,16 @@
           <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:2.0" />
           <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-8" />
           <element id="library" level="project" name="Maven: classworlds:classworlds:1.1-alpha-2" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.11.2" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.11.2" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.26" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.3.2" />
           <element id="archive" name="webservice-1.0-SNAPSHOT.jar">
             <element id="module-output" name="webservice" />
           </element>
@@ -57,7 +67,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.1.7.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:2.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:2.1.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.1.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.4" />
