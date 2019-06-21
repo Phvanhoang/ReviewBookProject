@@ -7,40 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed1897e6-f833-4c2c-a23f-793cfad78aed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/business_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/business_service_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/configure_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/configure_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/972b37ae-3432-4a4c-bed9-ccf4fa809061.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/972b37ae-3432-4a4c-bed9-ccf4fa809061.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/entity/MyBookEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-service/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-service/target/classes/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-review-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/book-review-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-service/business-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/business-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configure/configure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/configure/configure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/src/main/java/config/CustomSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/CustomSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/src/main/java/config/SecurityWebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/SecurityWebApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/src/main/java/config/WebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/src/main/java/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/src/main/java/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/src/main/webapp/WEB-INF/views/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/classes/config/CustomSuccessHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/classes/config/SecurityWebApplicationInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/classes/config/WebApplicationInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/classes/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/classes/config/WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/configure.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/configure/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/configure/WEB-INF/classes/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/configure/target/configure/WEB-INF/classes/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/configure/WEB-INF/lib/business-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/configure/target/configure/WEB-INF/lib/business-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/configure/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/configure/target/configure/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure/target/configure/WEB-INF/lib/webservice-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/configure/target/configure/WEB-INF/lib/webservice-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dao.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/BookEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/BookEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/BookSaleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/BookSaleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/CommentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/CommentReportEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/CommentReportEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/DistributorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/DistributorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/ReportContentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/ReportContentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/RoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/RoleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/UserRoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/UserRoleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog-dbmaster.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog-dbmaster.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/webservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/webservice.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/webservice/target/" />
@@ -72,17 +61,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="book_review_database: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -92,37 +70,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="476">
               <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
-              <folding>
-                <element signature="e#1883#1884#0" expanded="true" />
-                <element signature="e#1910#1911#0" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
-                <element signature="e#1980#1981#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +81,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/CustomSuccessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="136">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
@@ -139,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/SecurityWebApplicationInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
+            <state relative-caret-position="68">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
@@ -148,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebApplicationInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
+            <state relative-caret-position="68">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
@@ -157,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="799">
               <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
             </state>
           </provider>
@@ -166,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="408">
               <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
@@ -175,17 +126,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="170">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configure/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="323">
               <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -204,6 +173,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/dung" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -293,34 +275,29 @@
           <expand>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
-              <item name="configure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -328,74 +305,46 @@
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject-master" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -423,25 +372,26 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\configure\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\business-service\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\business-service\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\webservice\src" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\dao\src\main\java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CODEGYM\project_codegym\ReviewBookProject\dao\src\main\java" />
       <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\configure\src\main\java\config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="controller" />
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CODEGYM\project_codegym\ReviewBookProject\dao\src\main\resources" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\configure\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\business-service\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\business-service\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject-master\webservice\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -548,16 +498,18 @@
       <workItem from="1560900992000" duration="17368000" />
       <workItem from="1560936505219" duration="5996000" />
       <workItem from="1560945323186" duration="5048000" />
+      <workItem from="1561049045789" duration="531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80373000" />
+    <option name="totallyTimeSpent" value="80904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2033557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2065053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -573,12 +525,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.18413597" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.3286119" />
@@ -588,7 +540,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.16979866" />
+      <window_info anchor="right" id="Database" order="6" weight="0.16944024" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -597,49 +549,63 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/dung" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/dung" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/repository/UserRoleEntityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role/index/user_id">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="54d93b7a-81d4-459f-b299-de35dc94d6c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role/index/role_id">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="54d93b7a-81d4-459f-b299-de35dc94d6c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role/index/user_id" />
+    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role" />
+    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role/index/role_id" />
+    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/role" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final.jar!/org/hibernate/tuple/entity/PojoEntityTuplizer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -647,13 +613,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="499" selection-start-line="499" selection-end-line="499" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Constructor.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final.jar!/org/hibernate/tuple/entity/AbstractEntityTuplizer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1284">
@@ -690,15 +650,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/report_content">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="54d93b7a-81d4-459f-b299-de35dc94d6c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/report_content" />
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -706,15 +658,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="54d93b7a-81d4-459f-b299-de35dc94d6c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user" />
     <entry file="file://$PROJECT_DIR$/webservice/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -891,22 +835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#1883#1884#0" expanded="true" />
-            <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="136">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -914,66 +846,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="131" column="78" selection-start-line="131" selection-start-column="78" selection-end-line="131" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
+        <state relative-caret-position="476">
           <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/CustomSuccessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="136">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/SecurityWebApplicationInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebApplicationInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
+        <state relative-caret-position="68">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="799">
           <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="408">
           <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configure/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="323">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>

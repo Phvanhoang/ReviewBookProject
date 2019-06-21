@@ -14,6 +14,9 @@ public class NotificationEntity implements Serializable {
     private NotificationContentEntity content;
     private String url;
 
+    public NotificationEntity() {
+    }
+
     @Id
     @Column(name = "no_id")
     @GeneratedValue(generator = "uuid")
@@ -48,7 +51,7 @@ public class NotificationEntity implements Serializable {
     }
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "content_id")
+    @JoinColumn(name = "no_content_id")
     public NotificationContentEntity getContent() {
         return content;
     }
@@ -57,7 +60,7 @@ public class NotificationEntity implements Serializable {
         this.content = content;
     }
 
-    @Column(name = "url")
+    @Column(name = "no_url")
     public String getUrl() {
         return url;
     }

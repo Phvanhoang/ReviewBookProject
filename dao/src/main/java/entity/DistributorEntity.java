@@ -10,6 +10,9 @@ public class DistributorEntity implements Serializable {
     private String name;
     private String url;
 
+    public DistributorEntity() {
+    }
+
     @Id
     @Column(name = "distributor_id")
     @GeneratedValue(strategy = GenerationType.AUTO)

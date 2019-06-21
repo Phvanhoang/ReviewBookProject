@@ -7,7 +7,10 @@ import java.io.Serializable;
 @Table(name = "report_content")
 public class ReportContentEntity implements Serializable {
     private long id;
-    private String name;
+    private String content;
+
+    public ReportContentEntity() {
+    }
 
     @Id
     @Column(name = "report_content_id")
@@ -21,11 +24,11 @@ public class ReportContentEntity implements Serializable {
     }
 
     @Column(name = "report_content")
-    public String getName() {
-        return name;
+    public String getcontent() {
+        return content;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setcontent(String content) {
+        this.content = content;
     }
 }

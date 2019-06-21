@@ -12,6 +12,9 @@ public class BookSaleEntity implements Serializable {
     private String url;
     private float price;
 
+    public BookSaleEntity() {
+    }
+
     @Id
     @Column(name = "book_sale_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
