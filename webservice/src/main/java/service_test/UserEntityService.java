@@ -1,4 +1,4 @@
-package service;
+package service_test;
 
 import entity.UserEntity;
 import org.springframework.data.domain.Page;

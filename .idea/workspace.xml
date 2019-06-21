@@ -7,6 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed1897e6-f833-4c2c-a23f-793cfad78aed" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_28_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webservice/src/test/java/service_test/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/BookEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/BookEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookSaleEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/BookSaleEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookSaleEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/BookSaleEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/CommentEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/CommentEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentReportEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/CommentReportEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentReportEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/CommentReportEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/DistributorEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/DistributorEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/DistributorEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/DistributorEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationContentEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/NotificationContentEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationContentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/NotificationContentEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/NotificationEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/NotificationEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/ReportContentEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/ReportContentEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/ReportContentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/ReportContentEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/UserEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/UserEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserRoleEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/UserRoleEntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserRoleEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service_test/UserRoleEntityServiceImpl.java" afterDir="false" />
+=======
       <change afterPath="$PROJECT_DIR$/dao/src/main/java/entity/MyBookEntity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -29,6 +60,7 @@
       <change beforePath="$PROJECT_DIR$/dao/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog-dbmaster.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog-dbmaster.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
       <change beforePath="$PROJECT_DIR$/webservice/webservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/webservice.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -70,42 +102,99 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+=======
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
               <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/configure/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webservice/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+=======
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/CustomSuccessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/config/SecurityWebApplicationInitializer.java">
+        <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/BookEntityServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="552">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
             <state relative-caret-position="68">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebApplicationInitializer.java">
+        <entry file="file://$PROJECT_DIR$/webservice/src/test/java/service_test/BookServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="480">
+              <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
             <state relative-caret-position="68">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog-dbmaster.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/resources/database.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+=======
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="799">
@@ -121,22 +210,35 @@
               <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pom.xml">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home_page.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="168">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+=======
             <state relative-caret-position="170">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.28.2/mockito-core-2.28.2-sources.jar!/org/mockito/Mockito.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36168">
+              <caret line="1545" column="13" selection-start-line="1545" selection-start-column="13" selection-end-line="1545" selection-end-column="13" />
+=======
         <entry file="file://$PROJECT_DIR$/configure/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </state>
           </provider>
         </entry>
@@ -166,8 +268,8 @@
       <list>
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -190,9 +292,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webservice/src/main/java/CommentEntityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/webservice/src/main/java/CommentReportEntityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/webservice/src/main/java/DistributorEntityServiceImpl.java" />
         <option value="$PROJECT_DIR$/webservice/src/main/java/NotificationContentEntityServiceImpl.java" />
         <option value="$PROJECT_DIR$/webservice/src/main/java/NotificationEntityServiceImpl.java" />
         <option value="$PROJECT_DIR$/webservice/src/main/java/ReportContentEntityServiceImpl.java" />
@@ -241,6 +340,9 @@
         <option value="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/configure/pom.xml" />
+        <option value="$PROJECT_DIR$/webservice/pom.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home_page.html" />
+        <option value="$PROJECT_DIR$/webservice/src/test/java/service_test/BookServiceTest.java" />
       </list>
     </option>
   </component>
@@ -260,7 +362,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="969" />
+    <option name="width" value="970" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -269,7 +371,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,6 +402,9 @@
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,10 +423,18 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="liquibase" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </path>
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,12 +457,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -498,11 +612,26 @@
       <workItem from="1560900992000" duration="17368000" />
       <workItem from="1560936505219" duration="5996000" />
       <workItem from="1560945323186" duration="5048000" />
+<<<<<<< HEAD
+      <workItem from="1560998469079" duration="2310000" />
+      <workItem from="1561034659047" duration="734000" />
+      <workItem from="1561111846495" duration="631000" />
+=======
       <workItem from="1561049045789" duration="531000" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="84048000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21140939" />
+=======
     <option name="totallyTimeSpent" value="80904000" />
   </component>
   <component name="ToolWindowManager">
@@ -510,6 +639,7 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2065053" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -519,7 +649,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41784704" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41784704" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -602,10 +732,13 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
     <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role/index/user_id" />
     <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role" />
     <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user_role/index/role_id" />
     <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/role" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final.jar!/org/hibernate/tuple/entity/PojoEntityTuplizer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -621,24 +754,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/UserEntityServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/UserEntityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/BookEntityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -658,11 +779,20 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="54d93b7a-81d4-459f-b299-de35dc94d6c3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+=======
     <entry file="das://972b37ae-3432-4a4c-bed9-ccf4fa809061/schema/book_review_database/table/user" />
     <entry file="file://$PROJECT_DIR$/webservice/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="30" column="21" selection-start-line="14" selection-start-column="8" selection-end-line="30" selection-end-column="21" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
         </state>
       </provider>
     </entry>
@@ -747,7 +877,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/BookSaleEntityService.java">
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/BookSaleEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
@@ -755,14 +885,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configure/src/main/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/BookSaleEntityServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/BookSaleEntityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
@@ -772,28 +895,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/BookEntityService.java">
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/BookEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/CommentEntityService.java">
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/CommentEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/UserRoleEntityService.java">
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/UserRoleEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service/UserRoleEntityServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/UserRoleEntityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
@@ -835,10 +958,23 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="131" column="78" selection-start-line="131" selection-start-column="78" selection-end-line="131" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+=======
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder.java" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -847,9 +983,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java">
+<<<<<<< HEAD
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+=======
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
         </state>
       </provider>
     </entry>
@@ -867,23 +1016,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.28.2/mockito-core-2.28.2.jar!/org/mockito/Mockito.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebApplicationInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="96">
+=======
         <state relative-caret-position="68">
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1128">
+=======
         <state relative-caret-position="799">
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
           <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="576">
+=======
         <state relative-caret-position="408">
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
           <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
@@ -897,6 +1065,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configure/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="288">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webservice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webservice/src/main/java/service_test/BookEntityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.28.2/mockito-core-2.28.2-sources.jar!/org/mockito/Mockito.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36168">
+          <caret line="1545" column="13" selection-start-line="1545" selection-start-column="13" selection-end-line="1545" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webservice/src/test/java/service_test/BookServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/liquibase/db.changelog-dbmaster.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+=======
         <state relative-caret-position="323">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
@@ -916,6 +1138,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 2c5bf4c03d49fa12e5e432b8c8d9f06fe71bed9b
   </component>
   <component name="masterDetails">
     <states>

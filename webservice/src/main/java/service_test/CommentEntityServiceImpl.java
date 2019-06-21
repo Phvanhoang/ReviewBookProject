@@ -1,4 +1,4 @@
-package service;
+package service_test;
 
 import entity.CommentEntity;
 import org.springframework.beans.factory.annotation.Autowired;

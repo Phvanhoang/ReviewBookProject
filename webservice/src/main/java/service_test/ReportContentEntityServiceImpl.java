@@ -1,4 +1,4 @@
-package service;
+package service_test;
 
 import entity.ReportContentEntity;
 import org.springframework.beans.factory.annotation.Autowired;

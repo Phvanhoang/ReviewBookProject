@@ -1,4 +1,4 @@
-package service;
+package service_test;
 
 import entity.DistributorEntity;
 import org.springframework.beans.factory.annotation.Autowired;

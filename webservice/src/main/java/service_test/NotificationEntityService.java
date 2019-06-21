@@ -1,8 +1,7 @@
-package service;
+package service_test;
 
 import entity.NotificationEntity;
 
-import java.util.List;
 import java.util.Set;
 
 public interface NotificationEntityService {
