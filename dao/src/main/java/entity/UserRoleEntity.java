@@ -10,6 +10,9 @@ public class UserRoleEntity implements Serializable {
     private UserEntity user;
     private RoleEntity role;
 
+    public UserRoleEntity() {
+    }
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)

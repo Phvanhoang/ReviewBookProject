@@ -11,6 +11,9 @@ public class CommentReportEntity implements Serializable {
     private CommentEntity comment;
     private boolean nonInspected;
 
+    public CommentReportEntity() {
+    }
+
     @Id
     @Column(name = "comment_report_id")
     @GeneratedValue(strategy = GenerationType.AUTO)

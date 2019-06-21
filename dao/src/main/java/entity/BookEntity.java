@@ -26,6 +26,9 @@ public class BookEntity implements Serializable {
     private Set<CommentEntity> comments = new HashSet<>();
     private Set<BookSaleEntity> bookSaleEntities = new HashSet<>();
 
+    public BookEntity() {
+    }
+
     @Id
     @Column(name = "book_id")
     @GeneratedValue(strategy = GenerationType.AUTO)

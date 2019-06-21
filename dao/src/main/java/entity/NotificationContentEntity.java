@@ -9,6 +9,9 @@ public class NotificationContentEntity implements Serializable {
     private int id;
     private String content;
 
+    public NotificationContentEntity() {
+    }
+
     @Id
     @Column(name = "no_content_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
