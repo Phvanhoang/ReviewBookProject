@@ -1,6 +1,5 @@
 package config;
 
-import liquibase.Liquibase;
 import liquibase.integration.spring.SpringLiquibase;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
