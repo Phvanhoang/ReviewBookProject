@@ -1,5 +1,7 @@
 package config;
 
+import liquibase.Liquibase;
+import liquibase.integration.spring.SpringLiquibase;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
@@ -90,7 +92,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/book_review_database");
         dataSource.setUsername( "root" );
-        dataSource.setPassword( "12345" );
+        dataSource.setPassword( "123456" );
         return dataSource;
     }
 
@@ -107,6 +109,15 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("hibernate.show_sql","true");
         return properties;
+    }
+
+    @Bean
+    public SpringLiquibase liquibase(){
+        SpringLiquibase liquibase = new SpringLiquibase();
+        liquibase.setDataSource(dataSource());
+        liquibase.setChangeLog("classpath:liquibase/db.changelog-dbmaster.xml");
+        liquibase.setContexts("test, production");
+        return liquibase;
     }
 
     @Bean

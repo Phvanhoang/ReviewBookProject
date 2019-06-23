@@ -7,6 +7,8 @@ import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="user")
@@ -24,6 +26,7 @@ public class UserEntity implements Serializable {
     private String email;
     private String phoneNumber;
     private String address;
+    private Set<MyBookEntity> myBooks= new HashSet<>();
 
     public UserEntity() {
     }
@@ -115,7 +118,7 @@ public class UserEntity implements Serializable {
 
     @Column(name = "sex")
     @NotNull
-    public boolean getSex() {
+    public boolean isSex() {
         return sex;
     }
 
@@ -154,5 +157,14 @@ public class UserEntity implements Serializable {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    public Set<MyBookEntity> getMyBooks() {
+        return myBooks;
+    }
+
+    public void setMyBooks(Set<MyBookEntity> myBooks) {
+        this.myBooks = myBooks;
     }
 }

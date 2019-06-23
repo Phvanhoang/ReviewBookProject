@@ -7,14 +7,26 @@ import java.util.Set;
 @Entity
 @Table(name = "my_book")
 public class MyBookEntity {
+    private long id;
     private UserEntity user;
-    private Set<BookEntity> book = new HashSet<>();
+    private BookEntity book;
 
     public MyBookEntity() {
     }
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @Id
+    @Column(name = "my_book_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
     public UserEntity getUser() {
         return user;
     }
@@ -23,13 +35,13 @@ public class MyBookEntity {
         this.user = user;
     }
 
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "book_id")
-    public Set<BookEntity> getBook() {
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "book_id", nullable = false)
+    public BookEntity getBook() {
         return book;
     }
 
-    public void setBook(Set<BookEntity> book) {
+    public void setBook(BookEntity book) {
         this.book = book;
     }
 }

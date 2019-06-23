@@ -128,4 +128,20 @@ public class BookEntity implements Serializable {
     public void setBookSaleEntities(Set<BookSaleEntity> bookSaleEntities) {
         this.bookSaleEntities = bookSaleEntities;
     }
+
+    @Override
+    public String toString() {
+        return "BookEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", content='" + content + '\'' +
+                ", typeBook='" + typeBook + '\'' +
+                ", authors='" + authors + '\'' +
+                ", image='" + image + '\'' +
+                ", date=" + date +
+                ", rate=" + rate +
+                ", comments=" + comments +
+                ", bookSaleEntities=" + bookSaleEntities +
+                '}';
+    }
 }

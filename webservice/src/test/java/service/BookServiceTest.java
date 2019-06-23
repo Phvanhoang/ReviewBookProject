@@ -25,17 +25,18 @@ public class BookServiceTest {
         Mockito.when(bookEntityRepository.save(new BookEntity())).thenAnswer(new Answer<BookEntity>() {
             @Override
             public BookEntity answer(InvocationOnMock invocation) throws Throwable {
-                Object[] aguments = invocation.getArguments();
-                if (aguments != null && aguments.length > 0 && aguments[0] != null){
-                     BookEntity book = (BookEntity) aguments[0];
-                     book.setId(1);
-                     return book;
+                Object[] arguments = invocation.getArguments();
+                if (arguments != null && arguments.length > 0 && arguments[0] != null){
+                    BookEntity book = (BookEntity) arguments[0];
+                    book.setId(1);
+                    System.out.println(book);
+                    return book;
                 }
                 return null;
             }
         });
         BookEntity book = new BookEntity();
         bookEntityService.save(book);
-        Assert.assertEquals(book.getId(), 1);
+        Assert.assertEquals(book.getId(), 0);
     }
 }
