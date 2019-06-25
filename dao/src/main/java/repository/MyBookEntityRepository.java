@@ -1,7 +1,7 @@
 package repository;
 
-import entity.MyBookEntity;
+import entity.MyBooksEntity;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface MyBookEntityRepository extends PagingAndSortingRepository<MyBookEntity, Long> {
+public interface MyBookEntityRepository extends PagingAndSortingRepository<MyBooksEntity, Long> {
 }

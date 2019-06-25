@@ -26,7 +26,7 @@ public class UserEntity implements Serializable {
     private String email;
     private String phoneNumber;
     private String address;
-    private Set<MyBookEntity> myBooks= new HashSet<>();
+    private Set<MyBooksEntity> myBooks= new HashSet<>();
 
     public UserEntity() {
     }
@@ -160,11 +160,11 @@ public class UserEntity implements Serializable {
     }
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-    public Set<MyBookEntity> getMyBooks() {
+    public Set<MyBooksEntity> getMyBooks() {
         return myBooks;
     }
 
-    public void setMyBooks(Set<MyBookEntity> myBooks) {
+    public void setMyBooks(Set<MyBooksEntity> myBooks) {
         this.myBooks = myBooks;
     }
 }

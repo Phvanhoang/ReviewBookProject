@@ -18,7 +18,7 @@ public class BookEntity implements Serializable {
     private long id;
     private String title;
     private String content;
-    private String typeBook;
+    private String genre;
     private String authors;
     private String image;
     private Date date;
@@ -63,12 +63,12 @@ public class BookEntity implements Serializable {
 
     @Column(name = "type_book")
     @NotBlank
-    public String getTypeBook() {
-        return typeBook;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setTypeBook(String typeBook) {
-        this.typeBook = typeBook;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
     @NotBlank
@@ -127,21 +127,5 @@ public class BookEntity implements Serializable {
 
     public void setBookSaleEntities(Set<BookSaleEntity> bookSaleEntities) {
         this.bookSaleEntities = bookSaleEntities;
-    }
-
-    @Override
-    public String toString() {
-        return "BookEntity{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", typeBook='" + typeBook + '\'' +
-                ", authors='" + authors + '\'' +
-                ", image='" + image + '\'' +
-                ", date=" + date +
-                ", rate=" + rate +
-                ", comments=" + comments +
-                ", bookSaleEntities=" + bookSaleEntities +
-                '}';
     }
 }

@@ -20,10 +20,10 @@ public class CommentEntity implements Serializable {
     public CommentEntity() {
     }
 
-    @Id
-    @Column(name = "comment_id")
-    @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid")
+    @Id
+    @Column(name = "comment_id", length = 36)
     public String getId() {
         return id;
     }

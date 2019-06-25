@@ -3,7 +3,8 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
-    <changeSet author="Dung" id="1">
+    <property name="u_id" value="uuid()" dbms="mysql"/>
+    <changeSet author="Hoang" id="1">
         <createTable tableName="book">
             <column autoIncrement="true" name="book_id" type="int(11)">
                 <constraints primaryKey="true"/>
@@ -12,6 +13,9 @@
                 <constraints nullable="false"/>
             </column>
             <column name="book_content" type="text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="genre" type="nvarchar(255)">
                 <constraints nullable="false"/>
             </column>
             <column name="authors" type="nvarchar(255)">
@@ -24,10 +28,11 @@
                 <constraints nullable="false"/>
             </column>
             <column name="rate" type="float">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
         </createTable>
-
+    </changeSet>
+    <changeSet author="Hoang" id="2">
         <createTable tableName="role">
             <column autoIncrement="true" name="role_id" type="int(11)">
                 <constraints primaryKey="true"/>
@@ -36,7 +41,8 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="3" author="Hoang">
         <createTable tableName="user">
             <column autoIncrement="true" name="user_id" type="int(11)">
                 <constraints primaryKey="true"/>
@@ -75,7 +81,8 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="4" author="Hoang">
         <createTable tableName="report_content">
             <column autoIncrement="true" name="report_content_id" type="int(11)">
                 <constraints primaryKey="true"/>
@@ -84,7 +91,8 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="5" author="Hoang">
         <createTable tableName="notification_content">
             <column autoIncrement="true" name="no_content_id" type="int(11)">
                 <constraints primaryKey="true"/>
@@ -93,7 +101,8 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="6" author="Hoang">
         <createTable tableName="distributor">
             <column autoIncrement="true" name="distributor_id" type="int(11)">
                 <constraints primaryKey="true"/>
@@ -101,131 +110,133 @@
             <column name="distributor_name" type="nvarchar(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="distributor_url" type="nvarchar(255)">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="7" author="Hoang">
         <createTable tableName="book_sale">
             <column autoIncrement="true" name="book_sale_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="distributor_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_distributor_id1"
+                             foreignKeyName="fk_book_sale_to_distributor"
                              references="distributor(distributor_id)"/>
             </column>
             <column name="book_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_book_id1"
+                             foreignKeyName="fk_book_sale_to_book"
                              references="book(book_id)"/>
             </column>
             <column name="book_sale_url" type="nvarchar(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="price" type="float">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="8" author="Hoang">
         <createTable tableName="comment">
-            <column name="comment_id" type="varchar(255)">
+            <column name="comment_id" type="varchar(255)" valueComputed="${u_id}">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="distributor_id" type="int(11)">
+            <column name="user_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_distributor_id2"
-                             references="distributor(distributor_id)"/>
+                             foreignKeyName="fk_comment_to_user"
+                             references="user(user_id)"/>
             </column>
             <column name="book_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_book_id2"
+                             foreignKeyName="fk_comment_to_book"
                              references="book(book_id)"/>
-            </column>
-            <column name="reply_comment_id" type="varchar(255)">
-                <constraints nullable="false"
-                             foreignKeyName="fk_comment_id1"
-                             references="comment(comment_id)"/>
             </column>
             <column name="comment_content" type="text">
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
+        <addColumn tableName="comment">
+            <column name="reply_comment_id" type="varchar(255)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_to_reply"
+                             references="comment(comment_id)"
+                />
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet id="9" author="Hoang">
         <createTable tableName="comment_report">
             <column autoIncrement="true" name="comment_report_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="comment_id" type="varchar(255)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_comment_id2"
+                             foreignKeyName="fk_comment_report_to_comment"
                              references="comment(comment_id)"/>
             </column>
             <column name="report_content_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_report_content_id"
+                             foreignKeyName="fk_comment_report_to_report_content"
                              references="report_content(report_content_id)"/>
             </column>
             <column name="non_inspected" type="bool">
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="10" author="Hoang">
         <createTable tableName="notification">
             <column name="no_id" type="varchar(255)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="user_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_user_id1"
+                             foreignKeyName="fk_notification_to_user"
                              references="user(user_id)"/>
             </column>
             <column name="comment_id" type="varchar(255)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_comment_id3"
+                             foreignKeyName="fk_notification_comment"
                              references="comment(comment_id)"/>
             </column>
             <column name="no_content_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_no_content_id"
+                             foreignKeyName="fk_notification_no_content"
                              references="notification_content(no_content_id)"/>
             </column>
-            <column name="no_url" type="varchar(255)">
+            <column name="notification_url" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
-        <createTable tableName="my_book">
-            <column autoIncrement="true" name="my_book_id" type="int(11)">
+    </changeSet>
+    <changeSet id="11" author="Hoang">
+        <createTable tableName="my_books">
+            <column autoIncrement="true" name="my_books_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="book_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_book_id3"
+                             foreignKeyName="fk_my_books_to_book"
                              references="book(book_id)"/>
             </column>
             <column name="user_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_user_id2"
+                             foreignKeyName="fk_my_books_to_user"
                              references="user(user_id)"/>
             </column>
         </createTable>
-
+    </changeSet>
+    <changeSet id="12" author="Hoang">
         <createTable tableName="user_role">
             <column autoIncrement="true" name="user_role_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="user_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_user_id3"
+                             foreignKeyName="fk_user_role_to_user"
                              references="user(user_id)"/>
             </column>
             <column name="role_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_role_id"
+                             foreignKeyName="fk_user_role_to_role"
                              references="role(role_id)"/>
             </column>
         </createTable>
     </changeSet>
-
 </databaseChangeLog>
