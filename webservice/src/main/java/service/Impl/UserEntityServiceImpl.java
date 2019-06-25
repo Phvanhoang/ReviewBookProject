@@ -1,4 +1,4 @@
-package service;
+package service.Impl;
 
 import entity.RoleEntity;
 import entity.UserEntity;
@@ -13,13 +13,15 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import repository.UserEntityRepository;
+import service.UserEntityService;
+import service.UserRoleEntityService;
 
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
 @Service
-public class UserEntityServiceImpl implements UserEntityService{
+public class UserEntityServiceImpl implements UserEntityService {
     @Autowired
     private UserEntityRepository userEntityRepository;
 

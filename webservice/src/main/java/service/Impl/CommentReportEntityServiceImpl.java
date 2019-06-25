@@ -1,8 +1,9 @@
-package service;
+package service.Impl;
 
 import entity.CommentReportEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.CommentReportEntityRepository;
+import service.CommentReportEntityService;
 
 public class CommentReportEntityServiceImpl implements CommentReportEntityService {
     @Autowired

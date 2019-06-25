@@ -1,10 +1,11 @@
-package service;
+package service.Impl;
 
 import entity.CommentEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import repository.CommentEntityRepository;
+import service.CommentEntityService;
 
 import java.util.Set;
 

@@ -1,14 +1,15 @@
-package service;
+package service.Impl;
 
 import entity.BookEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import repository.BookEntityRepository;
+import service.BookEntityService;
 
 import java.util.Optional;
 
-public class BookEntityServiceImpl implements BookEntityService{
+public class BookEntityServiceImpl implements BookEntityService {
     @Autowired
     private BookEntityRepository bookEntityRepository;
 
@@ -19,8 +20,8 @@ public class BookEntityServiceImpl implements BookEntityService{
     }
 
     @Override
-    public Iterable<BookEntity> findAllByName(String name) {
-        return bookEntityRepository.findAllByName(name);
+    public Iterable<BookEntity> findAllByTitle(String title) {
+        return bookEntityRepository.findAllByTitle(title);
     }
 
     @Override

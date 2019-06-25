@@ -16,7 +16,7 @@ import java.util.Set;
 @Table(name = "book")
 public class BookEntity implements Serializable {
     private long id;
-    private String name;
+    private String title;
     private String content;
     private String typeBook;
     private String authors;
@@ -40,15 +40,15 @@ public class BookEntity implements Serializable {
         this.id = id;
     }
 
-    @Column(name = "book_name")
+    @Column(name = "book_title")
     @NotBlank
     @Size(min = 5)
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     @Column(name = "book_content")
@@ -133,7 +133,7 @@ public class BookEntity implements Serializable {
     public String toString() {
         return "BookEntity{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", typeBook='" + typeBook + '\'' +
                 ", authors='" + authors + '\'' +

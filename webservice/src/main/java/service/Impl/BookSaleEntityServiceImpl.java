@@ -1,8 +1,9 @@
-package service;
+package service.Impl;
 
 import entity.BookSaleEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.BookSaleEntityRepository;
+import service.BookSaleEntityService;
 
 public class BookSaleEntityServiceImpl implements BookSaleEntityService {
     @Autowired

@@ -1,8 +1,9 @@
-package service;
+package service.Impl;
 
 import entity.NotificationEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.NotificationEntityRepository;
+import service.NotificationEntityService;
 
 import java.util.Set;
 

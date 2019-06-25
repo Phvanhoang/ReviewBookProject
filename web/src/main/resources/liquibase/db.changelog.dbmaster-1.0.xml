@@ -3,217 +3,229 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
-<!--    <changeSet author="Dung" id="1">-->
-<!--        <createTable tableName="book">-->
-<!--            <column autoIncrement="true" name="book_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="book_name" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="book_content" type="text">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="authors" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="image" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="date" type="date">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="rate" type="float">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+    <changeSet author="Dung" id="1">
+        <createTable tableName="book">
+            <column autoIncrement="true" name="book_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="book_title" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="book_content" type="text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="authors" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rate" type="float">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="role">-->
-<!--            <column autoIncrement="true" name="role_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="role_name" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="role">
+            <column autoIncrement="true" name="role_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="role_name" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="user">-->
-<!--            <column autoIncrement="true" name="user_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="username" type="varchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="password" type="varchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="account_non_locked" type="bool">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="enable" type="bool">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="first_name" type="nvarchar(50)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="last_name" type="nvarchar(50)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="birthday" type="date">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="sex" type="bool">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="email" type="varchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="phone_number" type="varchar(10)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="address" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="user">
+            <column autoIncrement="true" name="user_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="username" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="account_non_locked" type="bool">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enable" type="bool">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="nvarchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="nvarchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birthday" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sex" type="bool">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_number" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="report_content">-->
-<!--            <column autoIncrement="true" name="report_content_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="report_content" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="report_content">
+            <column autoIncrement="true" name="report_content_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="report_content" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="notification_content">-->
-<!--            <column autoIncrement="true" name="no_content_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="no_content" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="notification_content">
+            <column autoIncrement="true" name="no_content_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="no_content" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="distributor">-->
-<!--            <column autoIncrement="true" name="distributor_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="distributor_name" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="distributor_url" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="distributor">
+            <column autoIncrement="true" name="distributor_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="distributor_name" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="distributor_url" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="book_sale">-->
-<!--            <column autoIncrement="true" name="book_sale_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="distributor_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="distributor(distributor_id)"-->
-<!--                            foreignKeyName="distributor_id"/>-->
-<!--            </column>-->
-<!--            <column name="book_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="book(book_id)"-->
-<!--                            foreignKeyName=""/>-->
-<!--            </column>-->
-<!--            <column name="book_sale_url" type="nvarchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--            <column name="price" type="float">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="book_sale">
+            <column autoIncrement="true" name="book_sale_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="distributor_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_distributor_id1"
+                             references="distributor(distributor_id)"/>
+            </column>
+            <column name="book_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_book_id1"
+                             references="book(book_id)"/>
+            </column>
+            <column name="book_sale_url" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="float">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="comment">-->
-<!--            <column autoIncrement="true" name="comment_id" type="varchar(255)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="distributor_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="distributor(distributor_id)"/>-->
-<!--            </column>-->
-<!--            <column name="book_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="book(book_id)"/>-->
-<!--            </column>-->
-<!--            <column name="reply_comment_id" type="varchar(255)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="comment(comment_id)"/>-->
-<!--            </column>-->
-<!--            <column name="comment_content" type="text">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="comment">
+            <column name="comment_id" type="varchar(255)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="distributor_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_distributor_id2"
+                             references="distributor(distributor_id)"/>
+            </column>
+            <column name="book_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_book_id2"
+                             references="book(book_id)"/>
+            </column>
+            <column name="reply_comment_id" type="varchar(255)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_id1"
+                             references="comment(comment_id)"/>
+            </column>
+            <column name="comment_content" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="comment_report">-->
-<!--            <column autoIncrement="true" name="comment_report_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="comment_id" type="varchar(255)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="comment(comment_id)"/>-->
-<!--            </column>-->
-<!--            <column name="report_content_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="report_content(report_content_id)"/>-->
-<!--            </column>-->
-<!--            <column name="non_inspected" type="bool">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="comment_report">
+            <column autoIncrement="true" name="comment_report_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="comment_id" type="varchar(255)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_id2"
+                             references="comment(comment_id)"/>
+            </column>
+            <column name="report_content_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_report_content_id"
+                             references="report_content(report_content_id)"/>
+            </column>
+            <column name="non_inspected" type="bool">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="notification">-->
-<!--            <column autoIncrement="true" name="no_id" type="varchar(255)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="user_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="user(user_id)"/>-->
-<!--            </column>-->
-<!--            <column name="comment_id" type="varchar(255)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="comment(comment_id)"/>-->
-<!--            </column>-->
-<!--            <column name="no_content_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="notification_content(no_content_id)"/>-->
-<!--            </column>-->
-<!--            <column name="no_url" type="varchar(255)">-->
-<!--                <constraints nullable="false"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="notification">
+            <column name="no_id" type="varchar(255)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_user_id1"
+                             references="user(user_id)"/>
+            </column>
+            <column name="comment_id" type="varchar(255)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_id3"
+                             references="comment(comment_id)"/>
+            </column>
+            <column name="no_content_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_no_content_id"
+                             references="notification_content(no_content_id)"/>
+            </column>
+            <column name="no_url" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="my_book">-->
-<!--            <column name="my_book_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="book_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="book(book_id)"/>-->
-<!--            </column>-->
-<!--            <column name="user_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="user(user_id)"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
+        <createTable tableName="my_book">
+            <column autoIncrement="true" name="my_book_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="book_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_book_id3"
+                             references="book(book_id)"/>
+            </column>
+            <column name="user_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_user_id2"
+                             references="user(user_id)"/>
+            </column>
+        </createTable>
 
-<!--        <createTable tableName="user_role">-->
-<!--            <column autoIncrement="true" name="user_role_id" type="int(11)">-->
-<!--                <constraints primaryKey="true"/>-->
-<!--            </column>-->
-<!--            <column name="user_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="user(user_id)"/>-->
-<!--            </column>-->
-<!--            <column name="role_id" type="int(11)">-->
-<!--                <constraints nullable="false"-->
-<!--                             references="role(role_id)"/>-->
-<!--            </column>-->
-<!--        </createTable>-->
-<!--    </changeSet>-->
+        <createTable tableName="user_role">
+            <column autoIncrement="true" name="user_role_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_user_id3"
+                             references="user(user_id)"/>
+            </column>
+            <column name="role_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_role_id"
+                             references="role(role_id)"/>
+            </column>
+        </createTable>
+    </changeSet>
 
 </databaseChangeLog>

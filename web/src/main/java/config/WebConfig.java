@@ -30,7 +30,9 @@ import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 import service.BookEntityService;
-import service.BookEntityServiceImpl;
+import service.Impl.BookEntityServiceImpl;
+import service.Impl.UserEntityServiceImpl;
+import service.UserEntityService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -89,9 +91,9 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/book_review_database");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/liquibase");
         dataSource.setUsername( "root" );
-        dataSource.setPassword( "123456" );
+        dataSource.setPassword( "12345" );
         return dataSource;
     }
 
@@ -114,6 +116,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public SpringLiquibase liquibase(){
         SpringLiquibase liquibase = new SpringLiquibase();
         liquibase.setDataSource(dataSource());
+        liquibase.setDropFirst(true);
         liquibase.setChangeLog("classpath:liquibase/db.changelog-dbmaster.xml");
         liquibase.setContexts("test, production");
         return liquibase;
@@ -140,6 +143,11 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     @Bean
     public BookEntityService bookEntityService(){
         return new BookEntityServiceImpl();
+    }
+
+    @Bean
+    public UserEntityService userEntityService(){
+        return new UserEntityServiceImpl();
     }
 
     private ApplicationContext applicationContext;

@@ -1,8 +1,9 @@
-package service;
+package service.Impl;
 
 import entity.ReportContentEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.ReportContentEntityRepository;
+import service.ReportContentEntityService;
 
 public class ReportContentEntityServiceImpl implements ReportContentEntityService {
     @Autowired

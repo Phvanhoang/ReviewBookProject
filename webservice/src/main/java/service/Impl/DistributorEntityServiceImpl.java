@@ -1,8 +1,9 @@
-package service;
+package service.Impl;
 
 import entity.DistributorEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.DistributorEntityRepository;
+import service.DistributorEntityService;
 
 import java.util.Optional;
 
