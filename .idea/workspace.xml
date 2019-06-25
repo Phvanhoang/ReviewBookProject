@@ -6,30 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e0d0fce-dfe8-45ab-8ffa-c7788680c170" name="Default Changelist" comment="WebConfig.java&#10;package resources">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/675b3a8d-3b3a-4acf-81a6-204998bdef25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6e0d0fce-dfe8-45ab-8ffa-c7788680c170" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/repository/BookEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/repository/BookEntityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/BookEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/BookEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookSaleEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/BookSaleEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/CommentEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentReportEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/CommentReportEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/DistributorEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/DistributorEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationContentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/NotificationContentEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/NotificationEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/ReportContentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/ReportContentEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/UserEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserRoleEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/UserRoleEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/test/java/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/src/test/java/service/BookServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/business-service/target/" />
@@ -83,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="37" />
+            <state relative-caret-position="151">
+              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -163,8 +142,8 @@
         <option value="$PROJECT_DIR$/dao/src/main/java/entity/UserRoleEntity.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/liquibase/liquibase.properties" />
         <option value="$PROJECT_DIR$/web/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" />
       </list>
     </option>
   </component>
@@ -215,30 +194,6 @@
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -270,45 +225,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="webservice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -547,8 +463,16 @@
       <workItem from="1561261713212" duration="1128000" />
       <workItem from="1561264525831" duration="1792000" />
       <workItem from="1561378368576" duration="11604000" />
-      <workItem from="1561428504824" duration="219000" />
+      <workItem from="1561428504824" duration="933000" />
     </task>
+    <task id="LOCAL-00001" summary="liquibase.setDropFirst(true) -- WebConfig.java&#10;foreignKeyName -- resources">
+      <created>1561428785932</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561428785932</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -572,13 +496,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27045000" />
+    <option name="totallyTimeSpent" value="27978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -600,7 +524,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.23502304" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32718894" />
       <window_info anchor="bottom" id="Application Servers" order="16" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -618,9 +542,62 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/liquibase" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/liquibase" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WebConfig.java&#10;package resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebConfig.java&#10;package resources" />
+    <MESSAGE value="liquibase.setDropFirst(true) -- WebConfig.java&#10;foreignKeyName -- resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="liquibase.setDropFirst(true) -- WebConfig.java&#10;foreignKeyName -- resources" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/webservice/pom.xml">
@@ -999,31 +976,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/liquibase.properties">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/liquibase.properties" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/database.properties" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="164">
+          <caret line="211" column="22" lean-forward="true" selection-start-line="211" selection-start-column="22" selection-end-line="211" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="224" column="43" selection-start-line="224" selection-start-column="29" selection-end-line="224" selection-end-column="43" />
+        <state relative-caret-position="151">
+          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
         </state>
       </provider>
     </entry>
