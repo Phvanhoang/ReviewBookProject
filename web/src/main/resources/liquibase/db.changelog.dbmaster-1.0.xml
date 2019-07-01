@@ -43,7 +43,7 @@
         </createTable>
     </changeSet>
     <changeSet id="3" author="Hoang">
-        <createTable tableName="users">
+        <createTable tableName="user">
             <column autoIncrement="true" name="user_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
@@ -133,7 +133,7 @@
         </createTable>
     </changeSet>
     <changeSet id="8" author="Hoang">
-        <createTable tableName="comments">
+        <createTable tableName="comment">
             <column name="comment_id" type="varchar(255)" valueComputed="${u_id}">
                 <constraints primaryKey="true"/>
             </column>
