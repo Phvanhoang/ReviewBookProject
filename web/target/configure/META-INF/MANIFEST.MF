@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: configure Maven Webapp
 Implementation-Version: 1.0-SNAPSHOT
-Built-By: LENOVO
+Built-By: Dung
 Implementation-Vendor-Id: codegym.com
 Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_211
+Build-Jdk: 12
 Main-Class: ${start-class}
 

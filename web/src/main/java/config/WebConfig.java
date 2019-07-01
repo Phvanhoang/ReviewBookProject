@@ -11,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -43,6 +44,7 @@ import java.util.Properties;
 @EnableJpaRepositories(basePackages = {"repository"})
 @ComponentScan(basePackages = {"config", "controller","entity","service"})
 @EnableWebMvc
+@EnableSpringDataWebSupport
 public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     @Bean
     public SpringResourceTemplateResolver templateResolver(){
@@ -51,6 +53,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
         templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
+        templateResolver.setCharacterEncoding("UTF-8");
         return templateResolver;
     }
 
@@ -66,6 +69,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public ViewResolver viewResolver(){
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(templateEngine());
+        viewResolver.setCharacterEncoding("UTF-8");
         return viewResolver;
     }
 
@@ -91,7 +95,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/book_review_database");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/liquibase");
         dataSource.setUsername( "root" );
         dataSource.setPassword( "123456" );
         return dataSource;
@@ -106,9 +110,10 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 
     Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", "update");
+        properties.setProperty("hibernate.hbm2ddl.auto", "none");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("hibernate.show_sql","true");
+        properties.setProperty("hibernate.id.new_generator_mappings","false");
         return properties;
     }
 
@@ -116,7 +121,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public SpringLiquibase liquibase(){
         SpringLiquibase liquibase = new SpringLiquibase();
         liquibase.setDataSource(dataSource());
-        liquibase.setDropFirst(true);
+//        liquibase.setDropFirst(true);
         liquibase.setChangeLog("classpath:liquibase/db.changelog-dbmaster.xml");
         liquibase.setContexts("test, production");
         return liquibase;

@@ -33,7 +33,7 @@ public class MyBooksEntity {
         this.user = user;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "book_id", nullable = false)
     public BookEntity getBook() {
         return book;

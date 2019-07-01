@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "comment")
+@Table(name = "comments")
 public class CommentEntity implements Serializable {
     private String id;
     private UserEntity user;
