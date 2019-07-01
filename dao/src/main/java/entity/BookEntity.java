@@ -16,9 +16,9 @@ import java.util.Set;
 @Table(name = "book")
 public class BookEntity implements Serializable {
     private long id;
-    private String name;
+    private String title;
     private String content;
-    private String typeBook;
+    private String genre;
     private String authors;
     private String image;
     private Date date;
@@ -26,8 +26,6 @@ public class BookEntity implements Serializable {
     private Set<CommentEntity> comments = new HashSet<>();
     private Set<BookSaleEntity> bookSaleEntities = new HashSet<>();
 
-    public BookEntity() {
-    }
 
     @Id
     @Column(name = "book_id")
@@ -40,15 +38,15 @@ public class BookEntity implements Serializable {
         this.id = id;
     }
 
-    @Column(name = "book_name")
+    @Column(name = "book_title")
     @NotBlank
     @Size(min = 5)
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     @Column(name = "book_content")
@@ -61,14 +59,14 @@ public class BookEntity implements Serializable {
         this.content = content;
     }
 
-    @Column(name = "type_book")
+    @Column(name = "genre")
     @NotBlank
-    public String getTypeBook() {
-        return typeBook;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setTypeBook(String typeBook) {
-        this.typeBook = typeBook;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
     @NotBlank
@@ -111,7 +109,7 @@ public class BookEntity implements Serializable {
         this.rate = rate;
     }
 
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "book")
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "book")
     public Set<CommentEntity> getComments() {
         return comments;
     }

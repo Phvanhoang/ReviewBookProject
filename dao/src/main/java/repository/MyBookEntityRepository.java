@@ -1,7 +1,10 @@
 package repository;
 
-import entity.MyBookEntity;
+import entity.MyBooksEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface MyBookEntityRepository extends PagingAndSortingRepository<MyBookEntity, Long> {
+public interface MyBookEntityRepository extends PagingAndSortingRepository<MyBooksEntity, Long> {
+    Page<MyBooksEntity> findAllByUser(Pageable pageable, long userId);
 }

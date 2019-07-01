@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Table(name = "comment_report")
 public class CommentReportEntity implements Serializable {
     private long id;
-    private ReportContentEntity reportContentEntity;
+    private ReportContentEntity reportContent;
     private CommentEntity comment;
     private boolean nonInspected;
 
@@ -27,12 +27,12 @@ public class CommentReportEntity implements Serializable {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "report_content_id")
-    public ReportContentEntity getReportContentEntity() {
-        return reportContentEntity;
+    public ReportContentEntity getReportContent() {
+        return reportContent;
     }
 
-    public void setReportContentEntity(ReportContentEntity reportContentEntity) {
-        this.reportContentEntity = reportContentEntity;
+    public void setReportContent(ReportContentEntity reportContent) {
+        this.reportContent = reportContent;
     }
 
     @OneToOne(fetch = FetchType.LAZY)

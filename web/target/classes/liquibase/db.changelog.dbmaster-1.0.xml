@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+    <property name="u_id" value="uuid()" dbms="mysql"/>
+    <changeSet author="Hoang" id="1">
+        <createTable tableName="book">
+            <column autoIncrement="true" name="book_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="book_title" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="book_content" type="text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="genre" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="authors" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rate" type="float">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Hoang" id="2">
+        <createTable tableName="role">
+            <column autoIncrement="true" name="role_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="role_name" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="3" author="Hoang">
+        <createTable tableName="users">
+            <column autoIncrement="true" name="user_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="username" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="account_non_locked" type="bool">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enable" type="bool">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="nvarchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="nvarchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birthday" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sex" type="bool">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_number" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="4" author="Hoang">
+        <createTable tableName="report_content">
+            <column autoIncrement="true" name="report_content_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="report_content" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="5" author="Hoang">
+        <createTable tableName="notification_content">
+            <column autoIncrement="true" name="no_content_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="no_content" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="6" author="Hoang">
+        <createTable tableName="distributor">
+            <column autoIncrement="true" name="distributor_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="distributor_name" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="7" author="Hoang">
+        <createTable tableName="book_sale">
+            <column autoIncrement="true" name="book_sale_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="distributor_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_book_sale_to_distributor"
+                             references="distributor(distributor_id)"/>
+            </column>
+            <column name="book_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_book_sale_to_book"
+                             references="book(book_id)"/>
+            </column>
+            <column name="book_sale_url" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="8" author="Hoang">
+        <createTable tableName="comments">
+            <column name="comment_id" type="varchar(255)" valueComputed="${u_id}">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_to_user"
+                             references="users(user_id)"/>
+            </column>
+            <column name="book_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_to_book"
+                             references="book(book_id)"/>
+            </column>
+            <column name="comment_content" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addColumn tableName="comments">
+            <column name="reply_comment_id" type="varchar(255)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_to_reply"
+                             references="comments(comment_id)"
+                />
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet id="9" author="Hoang">
+        <createTable tableName="comment_report">
+            <column autoIncrement="true" name="comment_report_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="comment_id" type="varchar(255)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_report_to_comment"
+                             references="comments(comment_id)"/>
+            </column>
+            <column name="report_content_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_comment_report_to_report_content"
+                             references="report_content(report_content_id)"/>
+            </column>
+            <column name="non_inspected" type="bool">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="10" author="Hoang">
+        <createTable tableName="notification">
+            <column name="no_id" type="varchar(255)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_notification_to_user"
+                             references="users(user_id)"/>
+            </column>
+            <column name="comment_id" type="varchar(255)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_notification_comment"
+                             references="comments(comment_id)"/>
+            </column>
+            <column name="no_content_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_notification_no_content"
+                             references="notification_content(no_content_id)"/>
+            </column>
+            <column name="notification_url" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="11" author="Hoang">
+        <createTable tableName="my_books">
+            <column autoIncrement="true" name="my_books_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="book_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_my_books_to_book"
+                             references="book(book_id)"/>
+            </column>
+            <column name="user_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_my_books_to_user"
+                             references="users(user_id)"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="12" author="Hoang">
+        <createTable tableName="user_role">
+            <column autoIncrement="true" name="user_role_id" type="int(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_user_role_to_user"
+                             references="users(user_id)"/>
+            </column>
+            <column name="role_id" type="int(11)">
+                <constraints nullable="false"
+                             foreignKeyName="fk_user_role_to_role"
+                             references="role(role_id)"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
