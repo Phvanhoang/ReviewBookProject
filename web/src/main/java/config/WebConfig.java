@@ -95,7 +95,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/liquibase");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/book_review_database");
         dataSource.setUsername( "root" );
         dataSource.setPassword( "123456" );
         return dataSource;
@@ -141,8 +141,8 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/images/**", "/css/**", "/js/**")
-                .addResourceLocations("classpath:/images/", "classpath:/css/", "classpath:/js/");
+        registry.addResourceHandler("/images/**", "/css/**", "/js/**", "/bootstrap/**")
+                .addResourceLocations("classpath:/images/", "classpath:/css/", "classpath:/js/", "classpath:/bootstrap/");
     }
 
     @Bean

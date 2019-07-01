@@ -43,7 +43,7 @@
         </createTable>
     </changeSet>
     <changeSet id="3" author="Hoang">
-        <createTable tableName="users">
+        <createTable tableName="user">
             <column autoIncrement="true" name="user_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
@@ -133,14 +133,14 @@
         </createTable>
     </changeSet>
     <changeSet id="8" author="Hoang">
-        <createTable tableName="comments">
+        <createTable tableName="comment">
             <column name="comment_id" type="varchar(255)" valueComputed="${u_id}">
                 <constraints primaryKey="true"/>
             </column>
             <column name="user_id" type="int(11)">
                 <constraints nullable="false"
                              foreignKeyName="fk_comment_to_user"
-                             references="users(user_id)"/>
+                             references="user(user_id)"/>
             </column>
             <column name="book_id" type="int(11)">
                 <constraints nullable="false"
@@ -151,11 +151,11 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-        <addColumn tableName="comments">
+        <addColumn tableName="comment">
             <column name="reply_comment_id" type="varchar(255)">
                 <constraints nullable="false"
                              foreignKeyName="fk_comment_to_reply"
-                             references="comments(comment_id)"
+                             references="comment(comment_id)"
                 />
             </column>
         </addColumn>
@@ -168,7 +168,7 @@
             <column name="comment_id" type="varchar(255)">
                 <constraints nullable="false"
                              foreignKeyName="fk_comment_report_to_comment"
-                             references="comments(comment_id)"/>
+                             references="comment(comment_id)"/>
             </column>
             <column name="report_content_id" type="int(11)">
                 <constraints nullable="false"
@@ -188,12 +188,12 @@
             <column name="user_id" type="int(11)">
                 <constraints nullable="false"
                              foreignKeyName="fk_notification_to_user"
-                             references="users(user_id)"/>
+                             references="user(user_id)"/>
             </column>
             <column name="comment_id" type="varchar(255)">
                 <constraints nullable="false"
                              foreignKeyName="fk_notification_comment"
-                             references="comments(comment_id)"/>
+                             references="comment(comment_id)"/>
             </column>
             <column name="no_content_id" type="int(11)">
                 <constraints nullable="false"
@@ -218,7 +218,7 @@
             <column name="user_id" type="int(11)">
                 <constraints nullable="false"
                              foreignKeyName="fk_my_books_to_user"
-                             references="users(user_id)"/>
+                             references="user(user_id)"/>
             </column>
         </createTable>
     </changeSet>
@@ -230,7 +230,7 @@
             <column name="user_id" type="int(11)">
                 <constraints nullable="false"
                              foreignKeyName="fk_user_role_to_user"
-                             references="users(user_id)"/>
+                             references="user(user_id)"/>
             </column>
             <column name="role_id" type="int(11)">
                 <constraints nullable="false"

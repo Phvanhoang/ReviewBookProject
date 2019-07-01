@@ -74,11 +74,11 @@
                 <div class="col-lg-3" th:text="*{book.book.title}"></div>
                 <div class="col-lg-3" th:text="*{book.book.authors}"></div>
                 <div class="col-lg-2">
-                    <button style="font-size:22px; color: white; width: 122px; background-color: red">Xóa
-                        <a th:href="@{/user/__${book.user.id}__/delete/__${book.book.id}__}">
+                    <a th:href="@{/user/__${book.user.id}__/delete/__${book.book.id}__}">
+                        <button style="font-size:22px; color: white; width: 122px; background-color: red">Xóa
                             <i class="material-icons" style="color: white; font-size: 28px;">delete_forever</i>
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </div>
             </div>
         </th:block>
