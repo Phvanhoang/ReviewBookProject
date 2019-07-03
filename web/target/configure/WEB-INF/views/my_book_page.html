@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand font-weight-bold" th:href="@{/}">Sadecreviewbook</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/}">Trang chủ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/reviewbook/list/{id}}">Sách của tôi</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Thể loại
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" th:href="@{/reviewbook/list/science_fiction}">Khoa học viễn tưởng</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" th:href="@{/reviewbook/list/detective}">Trinh thám</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" th:href="@{/reviewbook/list/novel}">Tiểu thuyết</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 font-weight-bold text-light" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-default btn-lg border-blue">
+            <a th:href="@{/user/__${userId}__}">
+                <i class='fas fa-user-circle' style='font-size:30px;color:white'></i>
+            </a>
+        </button>
+
+        <button type="button" class="btn btn-default btn-lg border-blue">
+            <a th:href="@{/user/id}">
+                <i class='fas fa-bell' style='font-size:30px;color:white'></i> <span class="badge badge-light" th:text="*{notifications.size()}"></span>
+            </a>
+        </button>
+
+        <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" th:href="@{/}">Action</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--body-->
+<div role="main" class="container">
+    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="row border-bottom border-dark">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3 font-weight-bold">Title</div>
+            <div class="col-lg-3 font-weight-bold">Author</div>
+            <div class="col-lg-2"></div>
+        </div>
+        <th:block th:each="book : ${myBooks}">
+            <div class="row border-bottom border-gray">
+                <div class="col-lg-2 card">
+                    <img src="abc" alt="bookImage"/>
+                </div>
+                <div class="col-lg-3" th:text="*{book.book.title}"></div>
+                <div class="col-lg-3" th:text="*{book.book.authors}"></div>
+                <div class="col-lg-2">
+                    <a th:href="@{/user/__${book.user.id}__/delete/__${book.book.id}__}">
+                        <button style="font-size:22px; color: white; width: 122px; background-color: red">Xóa
+                            <i class="material-icons" style="color: white; font-size: 28px;">delete_forever</i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </th:block>
+
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

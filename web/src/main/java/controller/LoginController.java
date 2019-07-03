@@ -65,4 +65,13 @@ public class LoginController {
        myBooksEntities.remove(book);
         return "redirect:/list/{userId}";
     }
+
+    //---user details---
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+    public ModelAndView getUserDetails(@PathVariable long id){
+        UserEntity userEntity = userEntityService.findById(id);
+        ModelAndView modelAndView = new ModelAndView("user_detail_page");
+        modelAndView.addObject("user", userEntity);
+        return modelAndView;
+    }
 }

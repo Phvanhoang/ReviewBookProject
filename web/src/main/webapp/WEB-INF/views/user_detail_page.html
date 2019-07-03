@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand font-weight-bold" th:href="@{/}">Sadecreviewbook</a>
+    <div class="float-lg-right">
+        <strong class="d-inline-block text-primary text-justify" th:text="*{user.username}">Xin chào </strong><br/>
+        <a th:href="@{/user_logout}">
+            <span class="glyphicon glyphicon-log-out"></span>
+        </a>
+    </div>
+</nav>
+
+<!--body-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 shadow-sm bg-blue rounded">
+            <div class="border-bottom border-dark font-weight-bold">
+                <a th:href="@{/}">Trang chủ</a>
+            </div>
+            <div class="border-bottom border-dark font-weight-bold">
+                <a th:href="@{/user/edit/__${user.id}__}">Sửa thông tin cá nhân</a>
+            </div>
+            <div class="border-bottom border-dark font-weight-bold">
+                <a th:href="@{/list/__${user.id}__}">Sách của tôi</a>
+            </div>
+            <div class="border-bottom border-dark font-weight-bold">
+                <a th:href="@{/user_logout}">Đăng xuất</a>
+            </div>
+
+        </div>
+        <div class="col-sm-9 bg-white">
+            <div class="container" align="right">
+
+                <div class="row">
+                    <div class="col-3">
+                        <label class="col-form-label">Ten người dùng : </label>
+                    </div>
+                    <div class="col-9">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" th:field="${user.username}" th:placeholder="*{user.username}">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="col-form-label">Họ : </label>
+                    </div>
+                    <div class="col-9">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" th:field="${user.lastName}" th:placeholder="*{user.lastName}">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="col-form-label">Tên : </label>
+                    </div>
+                    <div class="col-9">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" th:field="${user.firstName}" th:placeholder="*{user.firstName}">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" style="height: 54px">
+                    <div class="col-3">
+                        <label class="col-form-label"> Giới tính : </label>
+                    </div>
+                    <div class="col-5" align="center">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" th:if="    " checked>
+                            <label class="custom-control-label" for="defaultChecked">Default checked</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sex" id="nam" th:field="${user.sex}" value="Nam">
+                            <label class="form-check-label" for="Nam"> Nam </label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check" align="center">
+                            <input class="form-check-input" type="radio" name="sex" th:field="${user.sex}" id="nu" value="N?" >
+                            <label class="form-check-label" for="Nu"> N? </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row" style="height: 54px">
+                    <div class="col-3">
+                        <label class="col-form-label">Ngày sinh : </label>
+                        <div class="col-10">
+                            <input class="form-control" type="date" value="2011-08-19"  th:field="${user.birthday}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="col-form-label">Email : </label>
+                    </div>
+                    <div class="col-9">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" th:field="${user.email}" id="email" th:placeholder="*{user.email}">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <span style="font-size: 20px">Số điện thoại : </span>
+                    </div>
+                    <div class="col-9">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" th:field="${user.phoneNumber}" th:placeholder="*{user.phoneNumber}">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <span style="font-size: 20px">Địa chỉ : </span>
+                    </div>
+                    <div class="col-9">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="text" th:field="${user.address}" th:placeholder="*{user.address}">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" align="middle">
+                        <input type="submit" name="update" value="Lưu thay đổi" style="background: #6aa84f;color: #ffffff;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
