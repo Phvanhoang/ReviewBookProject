@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" th:href="@{/static/bootstrap.min.css}"/>
 </head>
 <body>
-    <h1>This is Home page</h1>
+<th:block th:each="book: ${books}">
+    <h3 th:text="${book.getTitle()}">Title</h3>
+</th:block>
+<table class="table table-active">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+    </tr>
+</table>
 </body>
 </html>

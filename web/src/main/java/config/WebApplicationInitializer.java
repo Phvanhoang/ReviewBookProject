@@ -13,7 +13,7 @@ public class WebApplicationInitializer
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] { WebSecurityConfig.class };
+        return new Class[]{WebSecurityConfig.class};
     }
 
     @Override
@@ -23,7 +23,7 @@ public class WebApplicationInitializer
 
     @Override
     protected String[] getServletMappings() {
-        return new String[] {"/"};
+        return new String[]{"/"};
     }
 
     @Override
@@ -38,6 +38,6 @@ public class WebApplicationInitializer
     protected Filter[] getServletFilters() {
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
-        return new Filter[] { characterEncodingFilter};
+        return new Filter[]{characterEncodingFilter};
     }
 }

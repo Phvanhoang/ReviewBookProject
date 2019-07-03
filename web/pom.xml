@@ -38,7 +38,7 @@
 
         <dependency>
             <groupId>codegym.com</groupId>
-            <artifactId>webservice</artifactId>
+            <artifactId>business-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -194,7 +194,8 @@
                     <version>3.6.3</version>
                     <configuration>
                         <propertyFile>src/main/resources/database.properties</propertyFile>
-                        <changeLogFile>src/main/resources/liquidbase/db.changelog-dbmaster.xml</changeLogFile>
+                        <changeLogFile>src/main/resources/liquibase/db.changelog-dbmaster.xml</changeLogFile>
+                        <diffChangeLogFile></diffChangeLogFile>
                         <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
                     </configuration>
                     <executions>

@@ -61,7 +61,7 @@ public class BookEntity implements Serializable {
         this.content = content;
     }
 
-    @Column(name = "type_book")
+    @Column(name = "genre")
     @NotBlank
     public String getGenre() {
         return genre;
@@ -111,7 +111,7 @@ public class BookEntity implements Serializable {
         this.rate = rate;
     }
 
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "book")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "book")
     public Set<CommentEntity> getComments() {
         return comments;
     }

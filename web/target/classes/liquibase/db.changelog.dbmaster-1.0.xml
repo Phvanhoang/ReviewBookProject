@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
-    <property name="u_id" value="uuid()" dbms="mysql"/>
     <changeSet author="Hoang" id="1">
         <createTable tableName="book">
             <column autoIncrement="true" name="book_id" type="int(11)">
@@ -32,6 +32,7 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet author="Hoang" id="2">
         <createTable tableName="role">
             <column autoIncrement="true" name="role_id" type="int(11)">
@@ -42,6 +43,7 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="3" author="Hoang">
         <createTable tableName="user">
             <column autoIncrement="true" name="user_id" type="int(11)">
@@ -54,10 +56,10 @@
                 <constraints nullable="false"/>
             </column>
             <column name="account_non_locked" type="bool">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="enable" type="bool">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="first_name" type="nvarchar(50)">
                 <constraints nullable="false"/>
@@ -82,6 +84,7 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="4" author="Hoang">
         <createTable tableName="report_content">
             <column autoIncrement="true" name="report_content_id" type="int(11)">
@@ -92,16 +95,18 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="5" author="Hoang">
         <createTable tableName="notification_content">
-            <column autoIncrement="true" name="no_content_id" type="int(11)">
+            <column autoIncrement="true" name="notification_content_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="no_content" type="nvarchar(255)">
+            <column name="notification_content" type="nvarchar(255)">
                 <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="6" author="Hoang">
         <createTable tableName="distributor">
             <column autoIncrement="true" name="distributor_id" type="int(11)">
@@ -112,6 +117,7 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="7" author="Hoang">
         <createTable tableName="book_sale">
             <column autoIncrement="true" name="book_sale_id" type="int(11)">
@@ -132,9 +138,10 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="8" author="Hoang">
         <createTable tableName="comment">
-            <column name="comment_id" type="varchar(255)" valueComputed="${u_id}">
+            <column autoIncrement="true" name="comment_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="user_id" type="int(11)">
@@ -150,22 +157,22 @@
             <column name="comment_content" type="text">
                 <constraints nullable="false"/>
             </column>
-        </createTable>
-        <addColumn tableName="comment">
-            <column name="reply_comment_id" type="varchar(255)">
-                <constraints nullable="false"
-                             foreignKeyName="fk_comment_to_reply"
-                             references="comment(comment_id)"
-                />
+            <column name="reply_comment_id" type="int(11)">
+                <constraints nullable="true"/>
             </column>
-        </addColumn>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="comment" baseColumnNames="reply_comment_id"
+                                 constraintName="fk_comment_to_reply"
+                                 referencedTableName="comment"
+                                 referencedColumnNames="comment_id"/>
     </changeSet>
+
     <changeSet id="9" author="Hoang">
         <createTable tableName="comment_report">
             <column autoIncrement="true" name="comment_report_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="comment_id" type="varchar(255)">
+            <column name="comment_id" type="int(11)">
                 <constraints nullable="false"
                              foreignKeyName="fk_comment_report_to_comment"
                              references="comment(comment_id)"/>
@@ -180,9 +187,10 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="10" author="Hoang">
         <createTable tableName="notification">
-            <column name="no_id" type="varchar(255)">
+            <column autoIncrement="true" name="notification_id" type="int(11)">
                 <constraints primaryKey="true"/>
             </column>
             <column name="user_id" type="int(11)">
@@ -190,21 +198,22 @@
                              foreignKeyName="fk_notification_to_user"
                              references="user(user_id)"/>
             </column>
-            <column name="comment_id" type="varchar(255)">
+            <column name="comment_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_notification_comment"
+                             foreignKeyName="fk_notification_to_comment"
                              references="comment(comment_id)"/>
             </column>
-            <column name="no_content_id" type="int(11)">
+            <column name="notification_content_id" type="int(11)">
                 <constraints nullable="false"
-                             foreignKeyName="fk_notification_no_content"
-                             references="notification_content(no_content_id)"/>
+                             foreignKeyName="fk_notification_to_no_content"
+                             references="notification_content(notification_content_id)"/>
             </column>
             <column name="notification_url" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="11" author="Hoang">
         <createTable tableName="my_books">
             <column autoIncrement="true" name="my_books_id" type="int(11)">
@@ -222,6 +231,7 @@
             </column>
         </createTable>
     </changeSet>
+
     <changeSet id="12" author="Hoang">
         <createTable tableName="user_role">
             <column autoIncrement="true" name="user_role_id" type="int(11)">
@@ -239,4 +249,5 @@
             </column>
         </createTable>
     </changeSet>
+
 </databaseChangeLog>

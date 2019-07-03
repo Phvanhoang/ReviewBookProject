@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name="user")
+@Table(name = "user")
 public class UserEntity implements Serializable {
 
     private long id;
@@ -26,7 +26,7 @@ public class UserEntity implements Serializable {
     private String email;
     private String phoneNumber;
     private String address;
-    private Set<MyBooksEntity> myBooks= new HashSet<>();
+    private Set<MyBooksEntity> myBooks = new HashSet<>();
 
     public UserEntity() {
     }
@@ -96,7 +96,7 @@ public class UserEntity implements Serializable {
 
     @Column(name = "last_name")
     @NotBlank
-    @Size(max=9)
+    @Size(max = 9)
     public String getLastName() {
         return lastName;
     }

@@ -1,0 +1,17 @@
+package service;
+
+import entity.CommentEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.Set;
+
+public interface CommentEntityService {
+    Page<CommentEntity> findAllByBook(Pageable pageable, long bookId);
+
+    Set<CommentEntity> findAllByComment(long commentId);
+
+    void save(CommentEntity commentEntity);
+
+    void delete(CommentEntity commentEntity);
+}

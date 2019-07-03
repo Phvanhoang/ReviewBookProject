@@ -35,7 +35,7 @@ public class BookSaleEntity implements Serializable {
         this.distributor = distributor;
     }
 
-    @OneToOne(fetch =  FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "book_id")
     public BookEntity getBook() {
         return book;

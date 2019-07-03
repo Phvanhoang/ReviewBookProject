@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "notification")
 public class NotificationEntity implements Serializable {
-    private String id;
+    private long id;
     private UserEntity user;
     private CommentEntity comment;
     private NotificationContentEntity content;
@@ -18,14 +18,13 @@ public class NotificationEntity implements Serializable {
     }
 
     @Id
-    @Column(name = "no_id", length = 36)
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
-    public String getId() {
+    @Column(name = "notification_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -50,7 +49,7 @@ public class NotificationEntity implements Serializable {
     }
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "no_content_id")
+    @JoinColumn(name = "notification_content_id")
     public NotificationContentEntity getContent() {
         return content;
     }
@@ -65,6 +64,6 @@ public class NotificationEntity implements Serializable {
     }
 
     public void setUrl(String url) {
-        this.url = "http://localhost:8080/";
+        this.url = url;
     }
 }

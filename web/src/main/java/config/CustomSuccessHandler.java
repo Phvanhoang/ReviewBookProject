@@ -22,36 +22,36 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     @Override
     protected void handle(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         String targetUrl = determineTargetUrl(authentication);
-        if (response.isCommitted()){
+        if (response.isCommitted()) {
             return;
         }
         redirectStrategy.sendRedirect(request, response, targetUrl);
     }
 
-    protected String determineTargetUrl(Authentication auth){
+    protected String determineTargetUrl(Authentication auth) {
         String url = "";
         Collection<? extends GrantedAuthority> grantedAuthority = auth.getAuthorities();
         Set<String> roleNames = new HashSet<>();
-        for (GrantedAuthority a: grantedAuthority) {
+        for (GrantedAuthority a : grantedAuthority) {
             roleNames.add(a.getAuthority());
         }
-        if (roleNames.contains("DBA")){
+        if (roleNames.contains("DBA")) {
             url = "/dba";
-        } else if(roleNames.contains("ADMIN")){
+        } else if (roleNames.contains("ADMIN")) {
             url = "/admin";
-        } else if(roleNames.contains("USER")){
+        } else if (roleNames.contains("USER")) {
             url = "/user";
-        } else{
+        } else {
             url = "/accessDenied";
         }
         return url;
     }
 
-    public void setRedirectStratery(RedirectStrategy redirectStratery){
+    public void setRedirectStratery(RedirectStrategy redirectStratery) {
         this.redirectStrategy = redirectStratery;
     }
 
-    protected RedirectStrategy getRedirectStratery(){
+    protected RedirectStrategy getRedirectStratery() {
         return redirectStrategy;
     }
 }

@@ -32,7 +32,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    public void configure(AuthenticationManagerBuilder auth) throws Exception{
+    public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().withUser("hoangpv6681").password("Hoangpv6681").roles("ADMIN")
                 .and().withUser("hoangpv66").password("Hoangpv6681").roles("USER");
         auth.userDetailsService(userEntityService).passwordEncoder(passwordEncoder());
@@ -41,15 +41,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/","/login","/logout").permitAll()
+                .antMatchers("/", "/login", "/logout").permitAll()
                 .antMatchers("/user/**").access("hasAnyRole('USER', 'ADMIN','DBA')")
                 .antMatchers("/admin/**").access("hasAnyRole('ADMIN','DBA')")
                 .antMatchers("/dba/**").access("hasRole('DBA')")
                 .and()
                 .formLogin()
-//                .loginPage("/login")
+                .loginPage("/login")
                 .loginProcessingUrl("/user_login")
-                .defaultSuccessUrl("/login",true)
+                .defaultSuccessUrl("/login", true)
                 .successHandler(customSuccessHandler)
                 .and().exceptionHandling().accessDeniedPage("/access_denied")
                 .and().csrf()

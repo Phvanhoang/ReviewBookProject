@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name= "role")
+@Table(name = "role")
 public class RoleEntity implements Serializable {
     private long id;
     private String roleName;
