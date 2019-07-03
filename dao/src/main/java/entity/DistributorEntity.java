@@ -8,7 +8,6 @@ import java.io.Serializable;
 public class DistributorEntity implements Serializable {
     private long id;
     private String name;
-    private String url;
 
     public DistributorEntity() {
     }
@@ -33,12 +32,4 @@ public class DistributorEntity implements Serializable {
         this.name = name;
     }
 
-    @Column(name = "distributor_url")
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
 }

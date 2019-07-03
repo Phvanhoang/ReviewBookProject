@@ -1,7 +1,5 @@
 package entity;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
@@ -10,7 +8,7 @@ import java.util.Set;
 @Entity
 @Table(name = "comment")
 public class CommentEntity implements Serializable {
-    private String id;
+    private long id;
     private UserEntity user;
     private BookEntity book;
     private CommentEntity comment;
@@ -22,13 +20,12 @@ public class CommentEntity implements Serializable {
 
     @Id
     @Column(name = "comment_id")
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
-    public String getId() {
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -62,7 +59,7 @@ public class CommentEntity implements Serializable {
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "reply_comment_id", nullable = false)
+    @JoinColumn(name = "reply_comment_id")
     public CommentEntity getComment() {
         return comment;
     }

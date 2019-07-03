@@ -14,14 +14,14 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.5.RELEASE</version>
     </parent>
-    
+
     <modules>
         <module>web</module>
         <module>dao</module>
         <module>common</module>
         <module>configure</module>
-        <module>webservice</module>
         <module>business-service</module>
+        <module>webservice</module>
     </modules>
 
 </project>

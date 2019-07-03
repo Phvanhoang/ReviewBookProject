@@ -14,16 +14,6 @@
         <module name="business-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="book-review-project" target="1.8" />
-      <module name="business-service" target="1.8" />
-      <module name="common" target="1.8" />
-      <module name="configure" target="1.8" />
-      <module name="dao" target="1.8" />
-      <module name="temp" target="1.8" />
-      <module name="web" target="1.7" />
-      <module name="webservice" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -31,7 +21,6 @@
       <module name="common" options="-parameters" />
       <module name="configure" options="-parameters" />
       <module name="dao" options="-parameters" />
-      <module name="temp" options="-parameters" />
       <module name="web" options="-parameters" />
       <module name="webservice" options="-parameters" />
     </option>

@@ -13,7 +13,7 @@ public class NotificationContentEntity implements Serializable {
     }
 
     @Id
-    @Column(name = "no_content_id")
+    @Column(name = "notification_content_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     public int getId() {
         return id;
@@ -23,7 +23,7 @@ public class NotificationContentEntity implements Serializable {
         this.id = id;
     }
 
-    @Column(name = "no_content")
+    @Column(name = "notification_content")
     public String getContent() {
         return content;
     }

@@ -7,9 +7,11 @@ import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
-@Table(name="user")
+@Table(name = "user")
 public class UserEntity implements Serializable {
 
     private long id;
@@ -24,6 +26,7 @@ public class UserEntity implements Serializable {
     private String email;
     private String phoneNumber;
     private String address;
+    private Set<MyBooksEntity> myBooks = new HashSet<>();
 
     public UserEntity() {
     }
@@ -93,7 +96,7 @@ public class UserEntity implements Serializable {
 
     @Column(name = "last_name")
     @NotBlank
-    @Size(max=9)
+    @Size(max = 9)
     public String getLastName() {
         return lastName;
     }
@@ -115,7 +118,7 @@ public class UserEntity implements Serializable {
 
     @Column(name = "sex")
     @NotNull
-    public boolean getSex() {
+    public boolean isSex() {
         return sex;
     }
 
@@ -154,5 +157,14 @@ public class UserEntity implements Serializable {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    public Set<MyBooksEntity> getMyBooks() {
+        return myBooks;
+    }
+
+    public void setMyBooks(Set<MyBooksEntity> myBooks) {
+        this.myBooks = myBooks;
     }
 }

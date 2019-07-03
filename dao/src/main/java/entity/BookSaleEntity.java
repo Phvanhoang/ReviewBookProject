@@ -7,10 +7,9 @@ import java.io.Serializable;
 @Table(name = "book_sale")
 public class BookSaleEntity implements Serializable {
     private long id;
-    private DistributorEntity distributorEntity;
+    private DistributorEntity distributor;
     private BookEntity book;
     private String url;
-    private float price;
 
     public BookSaleEntity() {
     }
@@ -28,15 +27,15 @@ public class BookSaleEntity implements Serializable {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "distributor_id")
-    public DistributorEntity getDistributorEntity() {
-        return distributorEntity;
+    public DistributorEntity getDistributor() {
+        return distributor;
     }
 
-    public void setDistributorEntity(DistributorEntity distributorEntity) {
-        this.distributorEntity = distributorEntity;
+    public void setDistributor(DistributorEntity distributor) {
+        this.distributor = distributor;
     }
 
-    @OneToOne(fetch =  FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "book_id")
     public BookEntity getBook() {
         return book;
@@ -55,12 +54,4 @@ public class BookSaleEntity implements Serializable {
         this.url = url;
     }
 
-    @Column(name = "price")
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
 }

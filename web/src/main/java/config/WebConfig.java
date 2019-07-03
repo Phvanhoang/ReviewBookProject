@@ -1,5 +1,6 @@
 package config;
 
+import liquibase.integration.spring.SpringLiquibase;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -29,7 +31,9 @@ import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 import service.BookEntityService;
-import service.BookEntityServiceImpl;
+import impl.BookEntityServiceImpl;
+import impl.UserEntityServiceImpl;
+import service.UserEntityService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -38,11 +42,12 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories(basePackages = {"repository"})
-@ComponentScan(basePackages = {"config", "controller","entity","service"})
+@ComponentScan(basePackages = {"config", "controller", "entity", "service"})
 @EnableWebMvc
+@EnableSpringDataWebSupport
 public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     @Bean
-    public SpringResourceTemplateResolver templateResolver(){
+    public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/views/");
@@ -52,7 +57,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     }
 
     @Bean
-    public TemplateEngine templateEngine(){
+    public TemplateEngine templateEngine() {
         TemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.addDialect(new SpringSecurityDialect());
@@ -60,7 +65,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     }
 
     @Bean
-    public ViewResolver viewResolver(){
+    public ViewResolver viewResolver() {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(templateEngine());
         return viewResolver;
@@ -85,17 +90,17 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     }
 
     @Bean
-    public DataSource dataSource(){
+    public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/book_review_database");
-        dataSource.setUsername( "root" );
-        dataSource.setPassword( "12345" );
+        dataSource.setUrl("jdbc:mysql://remotemysql.com/13Bm9mjSPN");
+        dataSource.setUsername("13Bm9mjSPN");
+        dataSource.setPassword("WrpUOQMYiN");
         return dataSource;
     }
 
     @Bean
-    public PlatformTransactionManager transactionManager(EntityManagerFactory emf){
+    public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(emf);
         return transactionManager;
@@ -103,19 +108,29 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 
     Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", "update");
+        properties.setProperty("hibernate.hbm2ddl.auto", "none");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-        properties.setProperty("hibernate.show_sql","true");
+        properties.setProperty("hibernate.show_sql", "true");
+        properties.setProperty("hibernate.id.new_generator_mappings", "false");
         return properties;
     }
 
     @Bean
-    public Validator validator(){
+    public SpringLiquibase liquibase() {
+        SpringLiquibase liquibase = new SpringLiquibase();
+        liquibase.setDataSource(dataSource());
+        liquibase.setChangeLog("classpath:liquibase/db.changelog-dbmaster.xml");
+        liquibase.setContexts("test, production");
+        return liquibase;
+    }
+
+    @Bean
+    public Validator validator() {
         return new LocalValidatorFactoryBean();
     }
 
     @Bean
-    public MessageSource messageSource(){
+    public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
         messageSource.setBasename("messages");
         return messageSource;
@@ -123,13 +138,18 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/images/**", "/css/**", "/js/**")
-                .addResourceLocations("classpath:/images/", "classpath:/css/", "classpath:/js/");
+        registry.addResourceHandler("/images/**", "/css/**", "/js/**","/static/**")
+                .addResourceLocations("classpath:/images/", "classpath:/css/", "classpath:/js/","classpath:/static/");
     }
 
     @Bean
-    public BookEntityService bookEntityService(){
+    public BookEntityService bookEntityService() {
         return new BookEntityServiceImpl();
+    }
+
+    @Bean
+    public UserEntityService userEntityService() {
+        return new UserEntityServiceImpl();
     }
 
     private ApplicationContext applicationContext;
