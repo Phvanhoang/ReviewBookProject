@@ -6,106 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5ea458f-84d8-4453-9c81-d5a4a5e12583" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/business-service/src/test/java/impl/BookEntityServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-service/src/test/java/impl/BookSaleEntityServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-service/src/test/java/impl/CommentEntityServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-service/src/test/java/impl/CommentReportEntityServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-service/src/test/java/impl/DistributorEntityServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-service/src/test/java/impl/UserEntityServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="611f93f8-4290-46c5-823f-69fe7b58624b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-service/target/test-classes/service/BookServiceTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-service/target/test-classes/service/BookServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/BookSaleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/BookSaleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/NotificationEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/RoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/RoleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/repository/CommentEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/repository/CommentEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/repository/NotificationEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/repository/NotificationEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/BookEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/BookEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/CommentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/CommentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/NotificationContentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/NotificationContentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/entity/NotificationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/entity/NotificationEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/repository/CommentEntityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/repository/CommentEntityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/repository/NotificationEntityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/repository/NotificationEntityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/config/CustomSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/CustomSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/config/WebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog-dbmaster.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog-dbmaster.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/liquibase/db.changelog-dbmaster.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/liquibase/db.changelog-dbmaster.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/config/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/liquibase/db.changelog.dbmaster-1.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/liquibase/db.changelog.dbmaster-1.0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/configure.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/liquibase/db.changelog-dbmaster.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/liquibase/db.changelog-dbmaster.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/config/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/liquibase/db.changelog.dbmaster-1.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/WEB-INF/classes/liquibase/db.changelog.dbmaster-1.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/lib/webservice-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/configure/WEB-INF/views/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/configure/WEB-INF/views/home_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/BookEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/BookSaleEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/BookSaleEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/CommentEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/CommentReportEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/CommentReportEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/DistributorEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/DistributorEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/BookEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/BookEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/BookSaleEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/BookSaleEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/CommentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/CommentEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/CommentReportEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/CommentReportEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/DistributorEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/DistributorEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/NotificationContentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/NotificationContentEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/NotificationEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/NotificationEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/ReportContentEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/ReportContentEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/UserEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/UserEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/Impl/UserRoleEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/impl/UserRoleEntityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationContentEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/NotificationContentEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/NotificationEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/NotificationEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/ReportContentEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/ReportContentEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/UserEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/main/java/service/UserRoleEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/src/main/java/service/UserRoleEntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/src/test/java/service/BookServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/BookEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/BookEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/BookSaleEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/BookSaleEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/CommentEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/CommentEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/CommentReportEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/CommentReportEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/DistributorEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/DistributorEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/BookEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/BookEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/BookSaleEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/BookSaleEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/CommentEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/CommentEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/CommentReportEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/CommentReportEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/DistributorEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/DistributorEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/NotificationContentEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/NotificationContentEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/NotificationEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/NotificationEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/ReportContentEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/ReportContentEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/UserEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/UserEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/Impl/UserRoleEntityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/Impl/UserRoleEntityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/NotificationContentEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/NotificationContentEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/NotificationEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/NotificationEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/ReportContentEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/ReportContentEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/UserEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/UserEntityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webservice/target/classes/service/UserRoleEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-service/target/classes/service/UserRoleEntityService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/web/target/" />
-    <ignored path="$PROJECT_DIR$/common/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/configure/target/" />
+    <ignored path="$PROJECT_DIR$/web/target/" />
     <ignored path="$PROJECT_DIR$/webservice/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/business-service/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dao/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,110 +33,59 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+            <state relative-caret-position="72">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog-dbmaster.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-            </state>
+            <state relative-caret-position="-5510" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+            <state relative-caret-position="-20">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/NotificationEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.idea/.name">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ReportContentEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/RoleEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/UserEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1417">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/CommentEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-624">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/web/src/main/java/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/entity/NotificationEntity.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java" />
-      </list>
-    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -239,8 +105,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="CatdeaLogs" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,6 +118,11 @@
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,78 +149,29 @@
             <path>
               <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-review-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReviewBookProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="webservice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\ReviewBookProject" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -373,7 +196,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_book-review-project_7" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_book-review-project_8" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -381,7 +204,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51722" />
+        <option name="DEBUG_PORT" value="55422" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -441,17 +264,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5ea458f-84d8-4453-9c81-d5a4a5e12583" name="Default Changelist" comment="" />
-      <created>1562156030144</created>
+      <changelist id="611f93f8-4290-46c5-823f-69fe7b58624b" name="Default Changelist" comment="" />
+      <created>1562218301104</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1562156030144</updated>
-      <workItem from="1562156032583" duration="2636000" />
+      <updated>1562218301104</updated>
+      <workItem from="1562218303431" duration="2828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2636000" />
+    <option name="totallyTimeSpent" value="2828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -470,13 +293,13 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3895184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -497,83 +320,37 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog-dbmaster.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookSaleEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/CommentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-624">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/NotificationContentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/NotificationEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/ReportContentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/RoleEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/entity/BookEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1417">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/liquibase/db.changelog.dbmaster-1.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
-        </state>
+        <state relative-caret-position="-5510" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+        <state relative-caret-position="-20">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>

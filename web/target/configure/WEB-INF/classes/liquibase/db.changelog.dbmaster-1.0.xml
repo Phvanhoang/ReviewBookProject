@@ -249,5 +249,4 @@
             </column>
         </createTable>
     </changeSet>
-
 </databaseChangeLog>
